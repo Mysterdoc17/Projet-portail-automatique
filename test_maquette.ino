@@ -23,6 +23,7 @@ void ouverture()
 
 void fermeture()
 {
+  // fermer le portail jusqu'au capteur de fin de course
   while ((digitalRead(capteur2_FDC)) != HIGH)
   {
     digitalWrite(moteur1, LOW);
