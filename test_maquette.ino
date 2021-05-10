@@ -22,9 +22,9 @@ void ouverture()
   digitalWrite(moteur2, LOW);
 }
 
-void fermeture ()
+void fermeture()
 {
-  while ((digitalWrite(capteur2_FDC)) != HIGH)
+  while ((digitalRead(capteur2_FDC)) != HIGH)
   {
     digitalWrite(moteur1, LOW);
     digitalWrite(moteur2, HIGH);
@@ -34,5 +34,7 @@ void fermeture ()
 }
 
 void loop() {
-  
+  ouverture();
+  delay(1000);
+  fermeture();
 }
