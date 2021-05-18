@@ -6,8 +6,6 @@ byte nuidPICC[4];
 #define RST_PIN 9
 #define SS_PIN 10
 
-int SDA = 10;
-int SCK = 13;
 
 MFRC522 maquette_portail(SS_PIN, RST_PIN);
 
