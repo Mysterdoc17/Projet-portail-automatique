@@ -6,7 +6,6 @@ import pymysql
 
 app = Flask(__name__)
 
-
 connexion = pymysql.connect(host="mysql-joske-jones.alwaysdata.net", port=3306, user="valtaudh@gmail.com", passwd="leahugo1805", db="joske-jones_portail-badges", autocommit=True)
 
 @app.route('/')
