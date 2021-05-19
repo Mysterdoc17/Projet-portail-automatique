@@ -36,7 +36,7 @@ def modification():
         telephone_python = request.values["phone"]
         badge_python = request.values["card"]
 
-       modification = "UPDATE badges SET "
+       modification = "UPDATE badges SET" + nom_python + "," + adresse_python + "," + telephone_python + "," + badge_python + ";"
     return render_template(
         'page_modification_utilisateurs.html',
         title='page modification utilisateurs',
