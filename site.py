@@ -6,7 +6,7 @@ import pymysql
 
 app = Flask(__name__)
 
-connexion = pymysql.connect(host="", port=3306, user="", passwd="leahugo1805", db="", autocommit=True)
+connexion = pymysql.connect(host="", port=3306, user="", passwd="", db="", autocommit=True)
 
 @app.route('/')
 @app.route('/home')
